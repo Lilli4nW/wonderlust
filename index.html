@@ -7,7 +7,11 @@
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
-
+    <a class="skip-to-content-link" href="#intro">Skip to Introduction</a>
+    <a class="skip-to-content-link" href="#plan-your-trip">Skip to Plan Your Trip</a>
+    <a class="skip-to-content-link" href="#testimonials">Skip to Testimonials</a>
+    <a class="skip-to-content-link" href="#about-your-destination">Skip to About Your Destination</a>
+    <a class="skip-to-content-link" href="#contact-us">Skip to Contact Us</a>
     <header>
         <h1>Destination Majorca</h1>
         <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
@@ -102,9 +106,9 @@
                         images/miranda-blake-L.png 1280w
                     -->
                         <picture>
-                            <source media="(min-width: 404w)" srcset="images/miranda-blake-S.png">
-                            <source media="(min-width: 920w)" srcset="images/miranda-blake-M.png">
-                            <source media="(min-width: 1280w)" srcset="images/miranda-blake-L.png">
+                            <source media="(min-width: 404px)" srcset="images/miranda-blake-S.png">
+                            <source media="(min-width: 920px)" srcset="images/miranda-blake-M.png">
+                            <source media="(min-width: 1280px)" srcset="images/miranda-blake-L.png">
                             <img src="images/miranda-blake-L.png" alt="An image of a woman named Miranda with blonde hair sunglasses, and suit smiling during the day in the desert.">
                         </picture>
                         <div>
@@ -124,9 +128,9 @@
                         images/max-winter-L.png 1280w
                     -->
                     <picture>
-                        <source media="(min-width: 404w)" srcset="images/max-winter-S.png">
-                        <source media="(min-width: 920w)" srcset="images/max-winter-M.png">
-                        <source media="(min-width: 1280w)" srcset="images/max-winter-L.png">
+                        <source media="(min-width: 404px)" srcset="images/max-winter-S.png">
+                        <source media="(min-width: 920px)" srcset="images/max-winter-M.png">
+                        <source media="(min-width: 1280px)" srcset="images/max-winter-L.png">
                         <img src="images/max-winter-L.png" alt="An image of a man named Max with brown eyes, and short wispy, brown hair wearing a brown button-up dress shirt in the living room.">
                     </picture>
                         <div>
@@ -146,9 +150,9 @@
                         images/ines-villegoes-L.png 1280w 
                     -->
                     <picture>
-                        <source media="(min-width: 404w)" srcset="images/ines-villegoes-S.png">
-                        <source media="(min-width: 920w)" srcset="images/ines-villegoes-M">
-                        <source media="(min-width: 1280w)" srcset="images/ines-villegoes-L.png">
+                        <source media="(min-width: 404px)" srcset="images/ines-villegoes-S.png">
+                        <source media="(min-width: 920px)" srcset="images/ines-villegoes-M">
+                        <source media="(min-width: 128px)" srcset="images/ines-villegoes-L.png">
                         <img src="images/ines-villegoes-L.png" alt="An image of a woman named Ines with brown eyes, a medium wavy, brown hair wearing a padded blue apron over a grey long-sleeve shirt. There appears to be brick walls in the background.">
                     </picture>
                     <div>
@@ -163,14 +167,14 @@
                 <section>
                     <!--Responsive Image for resolution switching
                         images/carmen-lorenzo-L.png
-                        images/carmen-lorenzo-S.png 404w
-                        images/carmen-lorenzo-M.png 920w
-                        images/carmen-lorenzo-L.png 1280w
+                        images/carmen-lorenzo-S.png 404px
+                        images/carmen-lorenzo-M.png 920px
+                        images/carmen-lorenzo-L.png 1280px
                     -->
                     <picture>
-                        <source media="(min-width: 404w)" srcset="images/carmen-lorenzo-S.png">
-                        <source media="(min-width: 920w)" srcset="images/carmen-lorenzo-M.png ">
-                        <source media="(min-width: 1280w)" srcset="images/carmen-lorenzo-L.png">
+                        <source media="(min-width: 404px)" srcset="images/carmen-lorenzo-S.png">
+                        <source media="(min-width: 920px)" srcset="images/carmen-lorenzo-M.png ">
+                        <source media="(min-width: 1280px)" srcset="images/carmen-lorenzo-L.png">
                         <img src="images/carmen-lorenzo-L.png" alt="An image of a woman with brown eyes, long brown hair, and ponytail. She wears a silver, circular earing on both her ears and stood infront of a grey backrop.">
                     </picture>
                         <div>
@@ -245,39 +249,40 @@
     </main>
     <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-            
+            <h3>Contact Us</h3> <span id="required">(*required)</span>
+            <form>
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="firstName">First Name<span>*</span></label>
+                    <input id="firstName" type="text" placeholder="First Name" required autocomplete>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lastName">Last Name<span>*</span></label>
+                    <input id="lastName" type="text" placeholder="Last Name" required autocomplete>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" type="email" placeholder="email@email.com" required autocomplete>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone" type="tel" placeholder="(555)123-4567" required autocomplete>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input name="preferredContact" type="radio" id="preferredContactEmail" required checked>
+                        <label for="preferredContactEmail">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input name="preferredContact" type="radio" id="preferredContactText" required checked>
+                        <label for="preferredContactText">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input name="preferredContact" type="radio" id="preferredContactPhone" required checked>
+                        <label for="preferredContactPhone">Phone</label>
                     </div>
                 </fieldset>
+            
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
                     <select id="select-destination">
@@ -304,11 +309,11 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
-            
+                <input type="submit" id="submit">
+            </form>
         </section>
         <section id="legal">
-            Legal
+            <h3>Legal</h3>
             <small>Copyright 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
